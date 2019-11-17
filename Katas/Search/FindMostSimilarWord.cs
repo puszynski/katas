@@ -31,14 +31,15 @@ namespace Katas.Search
 
         public string FindMostSimilar(string searchString)
         {
+            // higher int - higher similarity
             var mostSimilarWordPoints = new Dictionary<int, string>();
 
             foreach (var item in mostSimilarWordPoints)
             {
-
+                //todo
             }
 
-            return mostSimilarWordPoints.OrderBy(x => x.Key).First().Value;
+            return mostSimilarWordPoints.OrderByDescending(x => x.Key).First().Value;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Katas.Randomize;
+using System;
 
 namespace Katas
 {
@@ -6,7 +7,11 @@ namespace Katas
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Random array[100] with numbers from 1 to 100:");
+            var randomArray1_100 = new RandomArray1_100();
+            var result_int_1_100 = randomArray1_100.Generate();
+
+            Console.WriteLine("End");
         }
     }
 }
