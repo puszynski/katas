@@ -8,6 +8,12 @@ namespace Katas
     {
         static void Main(string[] args)
         {
+            #region quickTests
+            var dog = new Dog();
+            var result = dog?.IsIt == true ? 111 : 222;  //musi byc == true
+            #endregion
+
+
             var gac = new GroupAndCount();
             gac.GetData();
 
@@ -17,6 +23,12 @@ namespace Katas
             var result_int_1_100 = randomArray1_100.Generate();
 
             Console.WriteLine("End");
+        }
+
+        class Dog
+        {
+            public int MyProperty { get; set; }
+            public bool IsIt { get; set; }
         }
     }
 }

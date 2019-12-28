@@ -61,11 +61,6 @@ namespace Katas.Linq
             {
                 foreach (var category in new List<int> { 214 })
                 {
-                    var t = group
-                            .Where(x => x.ClubID == club)
-                            .Where(x => x.SaleCategoryID == category)
-                            .GroupBy(x => x.AgreementID);
-
                     //wiersz per kategoria
                     result.Add(new ExcelModel()
                     {
