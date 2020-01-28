@@ -8,6 +8,8 @@ namespace NUnitTests
 {
     public class FindMostSimilarWordTest
     {
+        //[TestCase("cherry", "pineapple", "melon", "strawberry", "raspberry")]
+        //TODO words into  https://dariuszwozniak.net/posts/kurs-tdd-8-testy-parametryzowane
         [Test]
         public void ExampleOne()
         {

@@ -87,7 +87,7 @@ namespace Katas.Linq
         }
     }
 
-    internal class Installment
+    public class Installment
     {
         public int ID { get; set; }
         public int ClubID { get; set; }

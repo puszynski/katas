@@ -13,6 +13,9 @@ namespace Katas
             var result = dog?.IsIt == true ? 111 : 222;  //musi byc == true
             #endregion
 
+            var joinTwoQueries = new JoinTwoQueries();
+            var re = joinTwoQueries.LinkData();
+
 
             var gac = new GroupAndCount();
             gac.GetData();
